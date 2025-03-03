@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserProfile;
 
 Route::get('/', function () {
     return view('welcome');
@@ -11,7 +12,7 @@ Route::view('home', 'home');
 
 
 Route::view('dashboard','dashboard');
-Route::view('profile','profile');
+
 Route::view('article','article');
 
 
@@ -20,9 +21,7 @@ Route::get('/dashboard', function () {
     return view('dashboard'); // Return the 'dashboard' view
 })->name('dashboard');
 
-Route::get('/profiles', function () {
-    return view('profiles'); // Return the 'dashboard' view
-})->name('profiles');
+Route::get('/profiles', [UserProfile::class,'users'])->name('profiles');
 
 
 Route::get('/article', function () {
