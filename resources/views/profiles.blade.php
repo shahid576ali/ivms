@@ -46,8 +46,8 @@
             <div class="table-data">
                 <div class="order">
                     <div class="head">
-                        <h3>{{$users->Name}}</h3>
-                       <span> {{$users->AdoreId}} </span>
+                        <h3>Shahid Ali</h3>
+                       <span> NIN-104012 </span>
                     </div>
                     <table>
                         <tbody>
@@ -55,43 +55,43 @@
                                 <td>
                                     <strong>Name</strong>
                                 </td>
-                                <td>{{$users->Name}}</td>
+                                <td>Shahid Ali</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Email</strong>
                                 </td>
-                                <td>{{$users->Email}}</td>
+                                <td>Shahid@gmail.com</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Contact</strong>
                                 </td>
-                                <td>{{$users->Contact}}</td>
+                                <td>8126808243</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>City</strong>
                                 </td>
-                                <td>{{$users->City}}</td>
+                                <td>Agra</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>State</strong>
                                 </td>
-                                <td>{{$users->State}}</td>
+                                <td>Uttar Pardesh</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Country</strong>
                                 </td>
-                                <td>{{$users->Country}}</td>
+                                <td>India</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>Language</strong>
+                                    <strong>LAnguage</strong>
                                 </td>
-                                <td>{{$users->Language}}</td>
+                                <td>English</td>
                             </tr>
                             
                         </tbody>
