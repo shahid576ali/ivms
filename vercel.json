@@ -1,16 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "Dockerfile",
-        "use": "@vercel/vender"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/public/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+}
