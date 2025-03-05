@@ -10,6 +10,10 @@
     { "src": "/(css|js|images|fonts|favicon)/(.*)", "dest": "public/$1/$2" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ],
+  "builds": [
+    { "src": "vercel-build.sh", "use": "@vercel/static-build", "config": { "distDir": "public" } },
+    { "src": "api/index.php", "use": "vercel-php@0.6.0" }
+  ],
   "env": {
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
